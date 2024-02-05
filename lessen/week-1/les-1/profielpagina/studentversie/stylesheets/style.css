@@ -7,7 +7,7 @@
 }
 
 .personalia {
-    background-color: #e7e8ec;
+    background-color: #2d3b4f;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,10 +20,10 @@
 }
 
 .person-logo {
-    border: 4px solid black;
+    border: 10px solid #faf8f8;
     border-radius: 50%;
     margin: 15px 0px 15px 0px;
-    width: 20%;
+    width: 80%;
     animation: glow 3s ease alternate;
 }
 
@@ -36,10 +36,6 @@
     color: rgba(39, 140, 39, 0.96);
 }
 
-.profile-content__category--hidden-mobile {
-    display: none;
-}
-
 .profile-content__element {
     display: flex;
     flex-direction: column;
@@ -48,7 +44,6 @@
 .profile-content__element--hidden-mobile {
     display: flex;
     flex-direction: column;
-    display: none;
 }
 
 .profile-content__title {
@@ -74,8 +69,17 @@
         flex-direction: row;
     }
 
+    .person-logo{
+        width: 80%;
+    }
+
     .person-name{
         order: -1;
+        color: #2d3b4f;
+    }
+
+    .personalia{
+        width: 40%;
     }
 
     .profile-content__category--hidden-mobile{
@@ -108,3 +112,19 @@
 
 /*student uitwerking*/
 
+.personanlia-content{
+    margin: 5%;
+}
+
+
+.personanlia-content a, i, h1{
+    color:#faf8f8;
+}
+
+.personanlia-content td i{
+    margin-right: 5px;
+}
+
+.personanlia-content table{
+    height: 100%;
+}
