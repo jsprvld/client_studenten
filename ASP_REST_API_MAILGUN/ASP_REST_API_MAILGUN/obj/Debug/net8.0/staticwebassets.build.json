@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dvSy5N3oqQnhKnnvXkX6QQLgU4NPJeYWtjDwnWMqNhY=",
+  "Source": "ASP_REST_API_MAILGUN",
+  "BasePath": "_content/ASP_REST_API_MAILGUN",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

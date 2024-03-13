@@ -1,0 +1,6 @@
+@ASP_REST_API_MAILGUN_HostAddress = http://localhost:5068
+
+GET {{ASP_REST_API_MAILGUN_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

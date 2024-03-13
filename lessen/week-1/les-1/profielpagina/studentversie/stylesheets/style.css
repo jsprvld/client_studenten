@@ -33,7 +33,8 @@
 }
 
 .profile-content__category-title {
-    color: rgba(39, 140, 39, 0.96);
+    color: #2d3b4f;
+    margin-bottom: 0%;
 }
 
 .profile-content__element {
@@ -58,7 +59,7 @@
 }
 
 .profile-content__institute {
-    color: rgba(39, 140, 39, 0.96);
+    color: #2d3b4f;
     margin-top: 0px;
     font-size: 14px;
 }
@@ -70,7 +71,7 @@
     }
 
     .person-logo{
-        width: 80%;
+        width: 75%;
     }
 
     .person-name{
@@ -106,16 +107,31 @@
         color: #5c6166;
         display: flex;
     }
+    .personanlia-content, table{
+        margin-bottom: 15%;
+    }
 
 }
 
 
 /*student uitwerking*/
 
-.personanlia-content{
-    margin: 5%;
+.personanlia-content, table{
+    height: 100%;
+    width: 75%;
 }
 
+.form-email{
+    margin-bottom: 15%;
+    height: 100%;
+}
+
+.form-email input{
+    margin-bottom: 2%;
+    padding: 2%;
+    border-radius:10px;
+    width: 95%;
+}
 
 .personanlia-content a, i, h1{
     color:#faf8f8;
@@ -128,3 +144,8 @@
 .personanlia-content table{
     height: 100%;
 }
+
+.profile-name {
+    font-size: 125%;
+}
+

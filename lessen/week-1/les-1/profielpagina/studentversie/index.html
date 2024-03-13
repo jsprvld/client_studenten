@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
-
+<script src="path/to/nodemailer.js"></script>
 <body>
 
 <div class="page">
@@ -21,36 +21,54 @@
             </div>
             <table>
                 <tbody>
-                <tr>
-                <td><i class="fa-solid fa-envelope"></i></td>
-                <td><a>Jesperveld@gmail.com</a></td>
-                </tr>
-                <tr>
-                <td><i class="fa-solid fa-location-dot"></i></td>
-                <td><a>Almere, Nederland</a></td>
-                </tr>
-                <tr>
-                <td><i class="fa-solid fa-phone"></i></td>
-                <td><a>06-12345678</a></td>
-                </tr>
-                <tr>
-                <td><i class="fa-brands fa-linkedin"></i></td>
-                <td><a>Linkedin.com/jesperveld</a></td>
-                </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-envelope"></i></td>
+                        <td><a>Jesperveld@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-location-dot"></i></td>
+                        <td><a>Almere, Nederland</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-phone"></i></td>
+                        <td><a>06-12345678</a></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-brands fa-linkedin"></i></td>
+                        <td><a>Linkedin.com/jesperveld</a></td>
+                    </tr>
                 </tbody>
-                </table>             
+            </table>             
+        </section>
+
+        <section class="personanlia-content">
+
+            <div> 
+                <h1 style="border-bottom: 1px solid white;">Contact</h1>
+            </div>
+
+            <form class="form-email">
+                
+                <input type="text" placeholder="Voornaam..." name="sirname" id="sirname">
+                <input type="text" placeholder="Achternaam..." name="lastname" id="lastname">
+                <input type="tel" placeholder="Telefoonnummer..." name="phonenumber" id="phonenumber">
+                <input type="email" placeholder="Email..." name="email" id="email" required minlength="8">
+                
+            
+                <input type="submit" class="test" value="Verstuur!">
+            
+            </form>
+
         </section>
 
     </section>
 
     <section class="profile">
 
-        <h1 class="person-name">Jesper Veld</h1>
-
         <section class="profile-content">
 
-            <div class="profile-content__category--hidden-mobile">
-                <h3 class="profile-content__category-title">Profiel</h3>
+            <div class="profile-content__category">
+                <h3 class="profile-content__category-title profile-name">Jesper Veld</h3>
                 <hr>
             </div>
 
@@ -58,37 +76,130 @@
                 <div class="profile-content__element-header">
                 </div>
                 <p class="profile-content__description">
-                    Als arts en developer ben ik bekwaam in het onderzoeken van
-                    de medische context en het zoeken van een technische oplossing.
-                <p>
+                    ICT-student met een passie voor technologische innovaties. 
+                    Vriendelijk en professioneel met ervaring in klantenservice en het ontwikkelen van oplossingen voor automatiseringen. 
+                    Gedreven om doelen te bereiken en altijd strevend naar het leveren van optimale resultaten.
+                </p>
             </div>
 
-
-            <div class="profile-content__category">
-                <h3 class="profile-content__category-title">Opleidingen</h3>
-                <hr>
-            </div>
-
-            <div class="profile-content__element">
-                <div class="profile-content__element-header">
-                    <h4 class="profile-content__title">Farmacie</h4>
-                    <p class="profile-content__period">nov 2021 - mei 2022</p>
+            <div>
+                <div class="profile-content__category">
+                    <h3 class="profile-content__category-title">Werkevaring</h3>
+                    <hr>
                 </div>
-                <p class="profile-content__institute">Universiteit Utrecht, Utrecht</p>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Flevonautica</h4>
+                        <p class="profile-content__period">Juli 2023 - Heden</p>
+                    </div>
+
+                    <p class="profile-content__institute">
+                        Verantwoordelijk voor het verwelkomen van bezoekers en het handhaven van een georganiseerde showroom. 
+                        Ook bezig met het produceren en bewerken van content voor sociale media.
+                    </p>
+                </div>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Ekris BMW & MINI</h4>
+                        <p class="profile-content__period">Juli 2023 - September 2023</p>
+                    </div>
+
+                    <p class="profile-content__institute">
+                        Ik begon met het handmatig verwerken van werkorders en ontdekte een mogelijkheid om een deel van dit proces te automatiseren. 
+                        Vervolgens heb ik een oplossing ontwikkeld voor geautomatiseerde werkorderplanning.
+                    </p>
+                </div>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Zuyder</h4>
+                        <p class="profile-content__period">April 2022 - November 2022</p>
+                    </div>
+
+                    <p class="profile-content__institute">
+                        Werkervaring in de horeca als bedieningsmedewerker. 
+                        Verwelkomde gasten, nam bestellingen op, bereidde drankjes voor, serveerde deze en handelde betalingen af om een aangename sfeer te creëren voor een plezierige ervaring
+                    </p>
+                </div>
+
             </div>
 
-            <div class="profile-content__element">
-                <div class="profile-content__element-header">
-                    <h4 class="profile-content__title">Onderzoeker</h4>
-                    <p class="profile-content__period">jan 2020 - feb 2021</p>
+            <div>
+                <div class="profile-content__category">
+                    <h3 class="profile-content__category-title">Opleidingen</h3>
+                    <hr>
                 </div>
-                <p class="profile-content__institute">Lindeboom instituut, Utrecht</p>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Windesheim Zwolle</h4>
+                        <p class="profile-content__period">September 2022 - Heden</p>
+                    </div>
+                    <p class="profile-content__institute">HBO Informatie- en Communicatietechnologie (ICT)</p>
+                </div>
+
+                <div class="profile-content__element">
+                    <div class="profile-content__element-header">
+                        <h4 class="profile-content__title">Helen Parkhurst</h4>
+                        <p class="profile-content__period">Juni 2022</p>
+                    </div>
+                    <p class="profile-content__institute">HAVO natuur en techniek diploma</p>
+                </div>
             </div>
+
         </section>
 
     </section>
 </div>
 
 </body>
+
+<script>
+    "use strict";
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', async function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const formData = new FormData(contactForm);
+        const formValues = Object.fromEntries(formData.entries());
+
+        await sendEmail(formValues); // Wait for the email to be sent
+    });
+
+    async function sendEmail(data) {
+        const transporter = nodemailer.createTransport({
+            host: "smtp.gmail.com",
+            port: 587,
+            secure: false,
+            auth: {
+                user: "nerdygadgetz@gmail.com",
+                pass: "vvzdqiqqaviccubm",
+            },
+        });
+
+        try {
+            const info = await transporter.sendMail({
+                from: data.email,
+                to: "bar@example.com, baz@example.com",
+                subject: "Contact Form Submission",
+                html: `
+                    <h1>Contact Form Submission</h1>
+                    <p><strong>First Name:</strong> ${data.sirname}</p>
+                    <p><strong>Last Name:</strong> ${data.lastname}</p>
+                    <p><strong>Phone Number:</strong> ${data.phonenumber}</p>
+                    <p><strong>Email:</strong> ${data.email}</p>
+                `
+            });
+
+            console.log("Message sent: %s", info.messageId);
+        } catch (error) {
+            console.error("Error sending email:", error);
+        }
+    }
+</script>
+
 
 </html>

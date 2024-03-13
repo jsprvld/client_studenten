@@ -1,0 +1,283 @@
+/*mobile version*/
+
+.page {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+}
+
+.personalia {
+    background-color: #2d3b4f;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile {
+    background-color: #faf8f8;
+    width: 100%;
+}
+
+.person-logo {
+    border: 10px solid #faf8f8;
+    border-radius: 50%;
+    margin: 15px 0px 15px 0px;
+    width: 80%;
+    animation: glow 3s ease alternate;
+}
+
+.profile-content {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.profile-content__category-title {
+    color: #2d3b4f;
+    margin-bottom: 0%;
+}
+
+.profile-content__element {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-content__element--hidden-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-content__title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-top: 6px;
+}
+
+.profile-content__period {
+    display: none;
+}
+
+.profile-content__institute {
+    color: #2d3b4f;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .page {
+        flex-direction: row;
+    }
+
+    .person-logo{
+        width: 75%;
+    }
+
+    .person-name{
+        order: -1;
+        color: #2d3b4f;
+    }
+
+    .personalia{
+        width: 40%;
+    }
+
+    .profile-content__category--hidden-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*fix: anders als stipje zichtbaar*/
+    .profile-content__category--hidden-mobile hr{
+        width: 100%;
+    }
+
+    .profile-content__element--hidden-mobile {
+        display: flex;
+    }
+
+    .profile-content__element-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-content__period {
+        font-size: 12px;
+        color: #5c6166;
+        display: flex;
+    }
+    .personanlia-content, table{
+        margin-bottom: 15%;
+    } 
+
+}
+
+
+/*student uitwerking*/
+
+.personanlia-content, table{
+    height: 100%;
+    width: 75%;
+}
+
+.form-email{
+    margin-bottom: 15%;
+    height: 100%;
+}
+
+.form-email input{
+    margin-bottom: 2%;
+    padding: 2%;
+    border-radius:10px;
+    width: 95%;
+}
+
+.form-email-sendform{
+    width: 100%;
+}
+
+.personanlia-content a, i, h1{
+    color:#faf8f8;
+}
+
+.personanlia-content td i{
+    margin-right: 5px;
+}
+
+.personanlia-content table{
+    height: 100%;
+}
+
+.profile-name {
+    font-size: 125%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: max-content;
+    margin-bottom: 15px;
+    max-width: 80%;
+    z-index: 1000; /* Ensure popup is on top of everything */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .close:hover {
+    color: red;
+  }
+  
+  .background-overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 999; /* Ensure overlay is below popup */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  }
+
+  .contact_button{
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid #888;
+    font-size: large;
+    margin-top: 5%;
+    padding: 5px;
+  }
+
+.contact_button:hover{
+    background-color: #bbbbbb;
+}
+
+.From-input {
+    border: 2px solid transparent;
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin: 5px;
+}
+
+.From-input:hover,
+.From-input:focus {
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+}
+
+.form-textarea{
+    resize: none;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-38 {
+    background-color: #F3F3F3;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-38:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.button-38:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-38:focus-visible {
+  box-shadow: none;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.serverStatus{
+    float: left;
+    font-size: smaller;
+    margin-top: 15px;
+}
+
